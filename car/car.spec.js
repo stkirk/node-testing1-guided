@@ -41,4 +41,6 @@ describe('Car class', () => {
     expect(car).toHaveProperty('make') // does not care about value
     expect(car).toHaveProperty('make', 'Toyota')
   })
+
+  test.todo('cars all start with an odometer at zero')
 })
