@@ -38,6 +38,7 @@ describe('Car class', () => {
     let expected = { make: 'Toyota'}
     expect(car).toMatchObject(expected)
     expect(car.make).toBe('Toyota')
-    expect(car).toHaveProperty('make')
+    expect(car).toHaveProperty('make') // does not care about value
+    expect(car).toHaveProperty('make', 'Toyota')
   })
 })
