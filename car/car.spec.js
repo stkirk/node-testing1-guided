@@ -36,12 +36,12 @@ describe('Car class', () => {
 
   test('cars built with Car have a make { make: "Toyota" }', () => {
     let expected = { make: 'Toyota' }
-    expect(car.make).toBe('Toyota')
     // expect(car).toBe({ model: 'Prius', make: 'Toyota' }) // ERROR!!
     expect(car).toEqual({ model: 'Prius', make: 'Toyota' }) // FRAGILE!!
     expect(car).toMatchObject(expected) // much better
     expect(car).toHaveProperty('make') // does not care about value
     expect(car).toHaveProperty('make', 'Toyota') // cares about prop and value
+    expect(car.make).toBe('Toyota')
   })
 
   test.todo('cars all start with an odometer at zero')
