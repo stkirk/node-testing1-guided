@@ -1,3 +1,5 @@
+const Car = require('./car')
+
 function gimmeFive() {
   return 5
 }
