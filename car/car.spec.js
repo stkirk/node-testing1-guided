@@ -57,5 +57,9 @@ describe('Car class', () => {
     expect(car.drive).toBe(Car.prototype.drive)
   })
 
-  test.todo('driving the car adds miles to the odometer')
+  test('driving the car adds miles to the odometer', () => {
+    car.drive(50)
+    expect(car.odometer).toBe(50)
+    car.drive()
+  })
 })
