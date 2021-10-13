@@ -4,6 +4,7 @@ class Car {
     this.make = make;
     this.odometer = 0;
   }
+  drive(){}
 }
 
 module.exports = Car;
