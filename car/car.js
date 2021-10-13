@@ -1,5 +1,7 @@
 class Car {
-  // here
+  constructor() {
+    this.model = 'Prius'
+  }
 }
 
 module.exports = Car
