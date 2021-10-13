@@ -19,5 +19,7 @@ describe('Car class', () => {
     expect(Car).toBeDefined()
   })
 
-  test('Car constructor returns a { model: "Prius" }')
+  test('cars built with Car have a model { model: "Prius" }', () => {
+    // FALSE POSITIVE
+  })
 })
