@@ -21,22 +21,19 @@ describe('Car class', () => {
     car = new Car('Prius', 'Toyota')
   })
 
-
   test('Car is defined', () => {
     expect(Car).toBeDefined()
   })
 
   test('cars built with Car have a model { model: "Prius" }', () => {
-    let actual = new Car('Prius', 'Toyota')
     let expected = { model: 'Prius' }
-    expect(actual).toMatchObject(expected)
-    actual = new Car('f150', 'Ford')
+    expect(car).toMatchObject(expected)
+    car = new Car('f150', 'Ford')
     expected = { model: 'f150'}
-    expect(actual).toMatchObject(expected)
+    expect(car).toMatchObject(expected)
   })
   test('cars built with Car have a make { make: "Toyota" }', () => {
-    let actual = new Car('Prius', 'Toyota')
     let expected = { make: 'Toyota'}
-    expect(actual).toMatchObject(expected)
+    expect(car).toMatchObject(expected)
   })
 })
