@@ -30,14 +30,16 @@ describe('Car class', () => {
     let expected = { model: 'Prius' }
     expect(car).toMatchObject(expected)
     car = new Car('f150', 'Ford')
-    expected = { model: 'f150'}
+    expected = { model: 'f150' }
     expect(car).toMatchObject(expected)
   })
 
   test('cars built with Car have a make { make: "Toyota" }', () => {
-    let expected = { make: 'Toyota'}
+    let expected = { make: 'Toyota' }
     expect(car).toMatchObject(expected)
     expect(car.make).toBe('Toyota')
+    expect(car).toEqual({ model: 'Prius', make: 'Toyota' }) // FRAGILE!!
+    expect(car).toEqual({ model: 'Prius', make: 'Toyota' }) // FRAGILE!!
     expect(car).toHaveProperty('make') // does not care about value
     expect(car).toHaveProperty('make', 'Toyota')
   })
