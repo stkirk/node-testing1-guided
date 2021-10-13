@@ -63,4 +63,6 @@ describe('Car class', () => {
     car.drive(50)
     expect(car.odometer).toBe(100)
   })
+
+  test.todo('dr')
 })
