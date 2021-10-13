@@ -22,14 +22,14 @@ describe('Car class', () => {
   test('cars built with Car have a model { model: "Prius" }', () => {
     let actual = new Car('Prius', 'Toyota')
     let expected = { model: 'Prius' }
-    expect(actual).toEqual(expected)
+    expect(actual.mo).toMatchObject(expected)
     actual = new Car('f150', 'Ford')
     expected = { model: 'f150'}
-    expect(actual).toEqual(expected)
+    expect(actual).toMatchObject(expected)
   })
   test('cars built with Car have a make { make: "Toyota" }', () => {
     let actual = new Car('Prius', 'Toyota')
     let expected = { model: 'Prius', make: 'Toyota'}
-    expect(actual).toEqual(expected)
+    expect(actual).toMatchObject(expected)
   })
 })
