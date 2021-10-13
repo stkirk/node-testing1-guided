@@ -59,13 +59,13 @@ describe('Car class', () => {
 
   test('driving the car adds miles to the odometer', () => {
     car.drive(50)
-    expect(car.odometer).toBe(50)
+    expect(car.odometer).toBe(50) // checking a side effect of driving
     car.drive(50)
     expect(car.odometer).toBe(100)
   })
 
   test('drive method returns the updated odometer value', () => {
-    expect(car.drive(50)).toBe(50)
+    expect(car.drive(50)).toBe(50) // checking what the function returns
     expect(car.drive(50)).toBe(100)
   })
 })
