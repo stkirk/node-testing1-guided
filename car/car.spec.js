@@ -49,5 +49,9 @@ describe('Car class', () => {
     expect(car).toHaveProperty("odometer", 0)
   })
 
-  test('cars have a drive method inherited from the Car.prototype')
+  test('cars have a drive method inherited from the Car.prototype', () => {
+    expect(car).toHaveProperty('drive')
+    expect(car.drive).toBeDefined()
+    expect(car.drive)
+  })
 })
