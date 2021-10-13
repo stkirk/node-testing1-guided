@@ -45,6 +45,7 @@ describe('Car class', () => {
   })
 
   test('cars all start with an odometer at zero', () => {
-    expect(car)
+    expect(car.odometer).toBe(0)
+    expect(car).toHaveProperty("odometer", 0)
   })
 })
