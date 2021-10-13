@@ -1,3 +1,6 @@
-class Car {}
+class Car
+{
+  
+}
 
 module.exports = Car
