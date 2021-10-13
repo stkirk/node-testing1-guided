@@ -18,6 +18,7 @@ describe('Car class', () => {
 
   let car
   beforeEach(() => {
+    // also there's beforeAll, afterAll, afterEach
     car = new Car('Prius', 'Toyota')
   })
 
