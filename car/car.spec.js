@@ -18,4 +18,6 @@ describe('Car class', () => {
   test('Car is defined', () => {
     expect(Car).toBeDefined()
   })
+
+  test('Car constructor builds a car')
 })
