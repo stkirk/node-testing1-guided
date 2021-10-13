@@ -9,5 +9,5 @@ test('it returns number 5', () => { // the actual test
   // assertions
   expect(actual).toBe(expected)
   expect(actual).toBeGreaterThan(4)
-  expect(actual).toBeLessThan(6)
+  expect(actual).toBeLessThan(3)
 })
