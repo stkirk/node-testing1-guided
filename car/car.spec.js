@@ -16,7 +16,10 @@ test('it returns number 5', () => { // the actual test
 
 describe('Car class', () => {
 
-  
+  let car
+  beforeEach(() => {
+    car = new Car('Prius', 'Toyota')
+  })
 
 
   test('Car is defined', () => {
