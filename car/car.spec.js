@@ -20,10 +20,10 @@ describe('Car class', () => {
   })
 
   test('cars built with Car have a model { model: "Prius" }', () => {
-    let actual = new Car('Prius')
+    let actual = new Car('Prius', 'Toyota')
     let expected = { model: 'Prius' }
     expect(actual).toEqual(expected)
-    actual = new Car('f150')
+    actual = new Car('f150', 'Ford')
     expected = { model: 'f150'}
     expect(actual).toEqual(expected)
   })
