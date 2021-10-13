@@ -44,5 +44,7 @@ describe('Car class', () => {
     expect(car.make).toBe('Toyota')
   })
 
-  test.todo('cars all start with an odometer at zero')
+  test('cars all start with an odometer at zero', () => {
+    expect(car)
+  })
 })
