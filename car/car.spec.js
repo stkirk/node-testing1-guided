@@ -1,2 +1,2 @@
 // Test away!
-test('')
+test('TODO: test that it returns number 7')
