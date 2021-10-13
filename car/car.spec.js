@@ -14,6 +14,6 @@ test('it returns number 5', () => { // the actual test
 
 describe('Car class', () => {
   test('Car is defined', () => {
-    // assertion?
+    expect(Car).toBeDefined()
   })
 })
