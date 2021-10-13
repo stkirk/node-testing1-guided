@@ -8,5 +8,5 @@ test('it returns number 5', () => {
   const expected = 5
   // assertion
   expect(actual).toBe(expected)
-  
+  expect(actual).
 })
