@@ -4,8 +4,8 @@ class Car {
     this.make = make;
     this.odometer = 0;
   }
-  drive(value) {
-
+  drive(distance) {
+    this.odometer += distance
   }
 }
 
