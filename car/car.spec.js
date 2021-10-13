@@ -73,6 +73,6 @@ describe('Car class', () => {
     let actual = await car.driveAsync(30)
     expect(actual).toBe(30)
     actual = await car.driveAsync(50)
-    expect(actual).toBe(100)
+    expect(actual).toBe(80)
   })
 })
