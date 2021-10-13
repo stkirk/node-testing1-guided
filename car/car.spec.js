@@ -16,7 +16,7 @@ test('it returns number 5', () => { // the actual test
 
 describe('Car class', () => {
 
-  let car
+  let car // remember closures
   beforeEach(() => {
     // also there's beforeAll, afterAll, afterEach
     car = new Car('Prius', 'Toyota')
@@ -37,5 +37,6 @@ describe('Car class', () => {
   test('cars built with Car have a make { make: "Toyota" }', () => {
     let expected = { make: 'Toyota'}
     expect(car).toMatchObject(expected)
+    expect(car.make).toBe('Toyota')
   })
 })
