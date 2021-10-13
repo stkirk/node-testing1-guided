@@ -28,6 +28,8 @@ describe('Car class', () => {
     expect(actual).toEqual(expected)
   })
   test('cars built with Car have a make { make: "Toyota" }', () => {
-    // 1
+    let actual = new Car('Prius', 'Toyota')
+    let expected = { model: 'Prius', make: 'Toyota'}
+    expect(actual).toEqual(expected)
   })
 })
