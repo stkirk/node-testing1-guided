@@ -21,7 +21,7 @@ describe('Car class', () => {
 
   test('cars built with Car have a model { model: "Prius" }', () => {
     const actual = Car
-    const expected = {}
+    const expected = { model: 'Prius' }
     expect(actual).toBe(expected)
   })
 })
