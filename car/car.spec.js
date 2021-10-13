@@ -65,6 +65,7 @@ describe('Car class', () => {
   })
 
   test('drive method returns the updated odometer value', () => {
-    expect(car.drive(50))
+    expect(car.drive(50)).toBe(50)
+    expect(car.drive(50)).toBe(100)
   })
 })
