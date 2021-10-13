@@ -53,6 +53,7 @@ describe('Car class', () => {
     expect(car).toHaveProperty('drive')
     expect(car.drive).toBeDefined()
     expect(typeof car.drive).toBe('function')
-    expect(car.drive).toBeInstanceOf()
+    expect(car.drive).toBeInstanceOf(Function)
+    expect(car.drive).toBe(Car.prototype.drive)
   })
 })
