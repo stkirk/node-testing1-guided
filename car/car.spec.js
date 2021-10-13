@@ -32,6 +32,7 @@ describe('Car class', () => {
     expected = { model: 'f150'}
     expect(car).toMatchObject(expected)
   })
+
   test('cars built with Car have a make { make: "Toyota" }', () => {
     let expected = { make: 'Toyota'}
     expect(car).toMatchObject(expected)
