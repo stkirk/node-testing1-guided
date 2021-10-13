@@ -27,4 +27,7 @@ describe('Car class', () => {
     expected = { model: 'f150'}
     expect(actual).toEqual(expected)
   })
+  test('cars built with Car have a make { make: "Toyota" }', () => {
+    // 1
+  })
 })
