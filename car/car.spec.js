@@ -20,6 +20,6 @@ describe('Car class', () => {
   })
 
   test('cars built with Car have a model { model: "Prius" }', () => {
-    // FALSE POSITIVE
+    // assertions
   })
 })
