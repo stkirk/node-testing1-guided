@@ -25,5 +25,6 @@ describe('Car class', () => {
     expect(prius).toEqual(expected)
     const f150 = new Car('f150')
     const expected2 = { model: 'f150'}
+    expect(f150).toEqual(expected2)
   })
 })

@@ -1,6 +1,6 @@
 class Car {
-  constructor() {
-    this.model = 'Prius'
+  constructor(model) {
+    this.model = model
   }
 }
 
