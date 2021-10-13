@@ -68,4 +68,6 @@ describe('Car class', () => {
     expect(car.drive(50)).toBe(50) // checking what the function returns
     expect(car.drive(50)).toBe(100)
   })
+
+  test('driveAsync resolves the updated odometer', async )
 })
