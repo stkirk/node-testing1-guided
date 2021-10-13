@@ -1,2 +1,7 @@
 // Test away!
-test('TODO: test that it returns number 7')
+test.todo('it returns number 7')
+test.todo('it returns number 7')
+test.todo('it returns number 7')
+test.todo('it returns number 7')
+test.todo('it returns number 7')
+test.todo('it returns number 7')
